@@ -1,7 +1,10 @@
-import Navbar from "./components/Navbar";
+import { Navbar } from "@/app/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
+import Contact from "@/app/contact/page";
+import Resume from "@/app/resume/page";
+import Project from "@/app/projects/page";
 
 const inter = Inter({ subsets: ["latin"] });
 const outfit = Outfit({ subsets: ["latin"], weight: ["300", "400", "700"] });
@@ -20,6 +23,9 @@ export default function RootLayout({
       <body className={`${outfit.className} ${inter.className}`}>
         <Navbar />
         {children}
+        <Contact />
+        <Resume />
+        <Project />
       </body>
     </html>
   );

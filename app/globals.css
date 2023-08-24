@@ -302,3 +302,30 @@ a:focus {
   font-size: 30px;
   margin: 20px;
 }
+
+/*****Mobile*****/
+
+@media screen and (max-width: 600px) {
+  .logo-img {
+    width: 4rem;
+  }
+  .nav-item {
+    margin: 5px;
+    font-size: 15px;
+  }
+  .home {
+    margin: 4rem auto;
+  }
+  .profile-pic {
+    width: 300px;
+  }
+  .about {
+    width: 100%;
+  }
+  .resume {
+    width: 100%;
+  }
+  .project {
+    width: 100%;
+  }
+}
