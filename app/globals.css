@@ -3,25 +3,302 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --bg-primary: linear-gradient(45deg, #fff, #c5dff8);
+  --nav-primary: #c5dff8;
+  --nav-secondary: #fff;
+  --clr-red-900: hsla(360, 100%, 17%, 1);
+  --clr-blue-500: hsla(227, 47%, 23%, 1);
+  --clr-blue-900: hsla(227, 100%, 17%, 1);
+  --clr-neutral-100: hsla(0, 0%, 100%, 1);
+  --clr-primary-800: hsla(229, 47%, 17%, 1);
+  --clr-primary-700: hsla(229, 43%, 20%, 1);
+  --clr-primary-400: hsla(230, 50%, 58%, 0.3);
+  --clr-primary-300: hsla(229, 36%, 39%, 1);
+  --clr-primary-200: hsla(229, 21%, 53%, 1);
+  --clr-accent-400: hsla(147, 93%, 43%, 1);
+  --clr-secondary-400: hsla(229, 78%, 60%, 1);
+
+  --ff-base: "Outfit", sans-serif;
+
+  --fw-regular: 300;
+  --fw-semi-bold: 400;
+  --fw-bold: 700;
+
+  --fs-200: 0.875rem;
+  --fs-300: 1rem;
+  --fs-400: 1.125rem;
+  --fs-500: 1.375rem;
+  --fs-600: 1.75rem;
+  --fs-700: 3.25rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  font-size: var(--fs-400);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  background: var(--bg-primary);
+}
+
+p {
+  max-width: 65ch;
+}
+
+a:hover,
+a:focus {
+  color: var(--clr-red-900);
+}
+
+.wrapper {
+  width: min(50rem, 100% - 2rem);
+  margin-inline: auto;
+}
+
+/*****Navigation*****/
+
+.primary-header {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 4rem;
+  padding: 1rem;
+  background: var(--nav-primary);
+  transition: background-color 500ms;
+}
+.primary-header.sticking {
+  background: var(--nav-secondary);
+}
+.primary-header a:hover,
+.primary-header a:focus {
+  opacity: 0.7;
+}
+.navigaton {
+  display: flex;
+  flex-direction: row;
+}
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-item {
+  margin: 10px;
+}
+
+.logo-img {
+  width: 6rem;
+}
+/*****Home*****/
+
+.home {
+  margin: 150px 400px;
+  display: grid;
+  grid-auto-flow: cols;
+  justify-items: center;
+  .profile-pic {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #fff;
+    box-shadow:
+      inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+      0 0 0 2px rgb(255, 255, 255),
+      0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  }
+  .catch-phrase {
+    display: flex;
+    justify-items: center;
+    margin: 10px;
+
+    .fire {
+      font-size: var(--fs-300);
+      font-weight: var(--fw-bold);
+      text-transform: uppercase;
+      @supports (backgound-clip: text) or (--webkit-background-clip: text) {
+        color: transparent;
+        background-clip: text;
+        --webkit-background-clip: text;
+        background-image: url("./images/fire-bg.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    .turned {
+      margin: auto 10px;
+    }
+    .dev {
+      font-size: var(--fs-300);
+      font-weight: var(--fw-bold);
+      text-transform: uppercase;
+      @supports (backgound-clip: text) or (--webkit-background-clip: text) {
+        color: transparent;
+        background-clip: text;
+        --webkit-background-clip: text;
+        background-image: url("./images/matrix.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+}
+
+.about {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1rem;
+}
+.about-header {
+  font-size: var(--ff-base);
+  font-weight: var(--fw-bold);
+}
+
+/*****Resume*****/
+
+.resume {
+  margin: auto;
+  width: 48rem;
+  background-color: #fff;
+  box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.resume-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 1rem auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 3px;
+  width: 14rem;
+}
+
+.certifications .cert-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cert-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+  .img {
+    width: 8rem;
+  }
+}
+
+.skills {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+}
+.skill-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+/********Line design**********/
+.linethrough {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+.linethrough:before,
+.linethrough:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+.linethrough:before {
+  margin-right: 10px;
+}
+.linethrough:after {
+  margin-left: 10px;
+}
+
+/********Project Card*******/
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 48rem;
+  margin: auto;
+}
+.project-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.project-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+.project-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 1px 4px;
+  margin: 5px;
+  width: fit;
+}
+
+/*****Contact*****/
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-list {
+  display: flex;
+  list-style: none;
+}
+.contact-item {
+  display: flex;
+  font-size: 30px;
+  margin: 20px;
 }
