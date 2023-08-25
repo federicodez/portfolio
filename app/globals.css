@@ -4,8 +4,8 @@
 
 :root {
   --bg-primary: linear-gradient(45deg, #fff, #c5dff8);
-  --nav-primary: #c5dff8;
-  --nav-secondary: #fff;
+  --nav-primary: #6a040f;
+  --nav-secondary: #c5dff8;
   --clr-red-900: hsla(360, 100%, 17%, 1);
   --clr-blue-500: hsla(227, 47%, 23%, 1);
   --clr-blue-900: hsla(227, 100%, 17%, 1);
@@ -71,7 +71,7 @@ a:focus {
 .navigation {
   position: fixed;
   top: 0;
-  background: var(--bg-primary);
+  background: var(--nav-primary);
   height: 80px;
   width: 100%;
 }
@@ -100,6 +100,7 @@ a:hover {
   display: inline-block;
   width: 8rem;
   margin-left: 1rem;
+  color: white;
 }
 
 .checkbtn {
@@ -109,7 +110,6 @@ a:hover {
   margin-right: 2rem;
   margin-top: 1rem;
   cursor: pointer;
-  color: black;
   display: none;
 }
 #check {
@@ -146,7 +146,7 @@ a:hover {
         color: transparent;
         background-clip: text;
         --webkit-background-clip: text;
-        background-image: url("./images/fire-bg.jpg");
+        background-image: url("../public/fire.gif");
         background-size: cover;
         background-position: center;
       }
@@ -161,7 +161,7 @@ a:hover {
         color: transparent;
         background-clip: text;
         --webkit-background-clip: text;
-        background-image: url("./images/matrix.jpg");
+        background-image: url("../public/matrix.gif");
         background-size: cover;
         background-position: center;
       }
