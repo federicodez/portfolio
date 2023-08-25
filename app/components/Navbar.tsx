@@ -17,17 +17,17 @@ export default function Navbar() {
         </Link>
         <ul className="nav-list">
           <li className="nav-item">
-            <Link style={{ color: "black" }} href="#resume">
+            <Link style={{ color: "white" }} href="#resume">
               Resume
             </Link>
           </li>
           <li className="nav-item">
-            <Link style={{ color: "black" }} href="#project">
+            <Link style={{ color: "white" }} href="#project">
               Projects
             </Link>
           </li>
           <li className="nav-item">
-            <Link style={{ color: "black" }} href="#contact">
+            <Link style={{ color: "white" }} href="#contact">
               Contact Me
             </Link>
           </li>
