@@ -13,24 +13,11 @@ export default function Resume() {
           rel="noopener noreferrer"
           download
         >
-          DOWNLOAD.PDF
+          DOWNLOAD CV
         </a>
         <AiOutlineDownload />
       </button>
       <div className="container resume" id="resume">
-        <h1 className="linethrough font-bold text-2xl">CERTIFICATIONS</h1>
-        <div className="certifications">
-          <ul className="cert-list">
-            <li className="cert-item">
-              <Image className="img" src={architect} alt="" />
-              <h1>AWS Solutions Architect Certified</h1>
-            </li>
-            <li className="cert-item">
-              <Image className="img" src={developer} alt="" />
-              <h1>AWS Developer Certified</h1>
-            </li>
-          </ul>
-        </div>
         <h1 className="linethrough font-bold text-2xl">EMPLOYMENT</h1>
         <div className="p-5">
           <h1 className="font-bold text-lg">Bowen Pain Center</h1>
@@ -101,6 +88,19 @@ export default function Resume() {
             IBC Fundamentals of JavaScript, Functional Programming, and Web
             Development Level 3
           </p>
+        </div>
+        <h1 className="linethrough font-bold text-2xl">CERTIFICATIONS</h1>
+        <div className="certifications">
+          <ul className="cert-list">
+            <li className="cert-item">
+              <Image className="img" src={architect} alt="" />
+              <h1>AWS Solutions Architect Certified</h1>
+            </li>
+            <li className="cert-item">
+              <Image className="img" src={developer} alt="" />
+              <h1>AWS Developer Certified</h1>
+            </li>
+          </ul>
         </div>
         <h1 className="linethrough font-bold text-2xl">TECHNICAL SKILLS</h1>
         <div className="skills">

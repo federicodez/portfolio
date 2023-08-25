@@ -39,7 +39,7 @@ export default function Project() {
           </button>
         </li>
         <li className="project-item">
-          <Image src={nufright} alt={""} />
+          <Image src={nufright} alt="nufright" />
           <p className="description">
             A one-stop shop for all horror related content. Deployed the app
             resiliently through AWS by using ELB with auto scaling to maintain
@@ -54,7 +54,11 @@ export default function Project() {
             resolved early in the project.
           </p>
           <button className="project-btn">
-            <a href="" target="_blank" rel="noopener">
+            <a
+              href={`https://github.com/federicodez/nuFright`}
+              target="_blank"
+              rel="noopener"
+            >
               See Live
             </a>
             <CiShare1 />
