@@ -24,7 +24,7 @@ export default function Contact() {
               id="firstName"
               name="firstName"
               className="bg-gray-50 border border-gray-300 text-blue-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-blue-100 dark:border-gray-600 dark:placeholder-blue-800 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Ken"
+              placeholder="Jon"
               required
             />
           </div>
@@ -40,7 +40,7 @@ export default function Contact() {
               id="lastName"
               name="lastName"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-blue-100 dark:border-gray-600 dark:placeholder-blue-800 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Adams"
+              placeholder="Snow"
               required
             />
           </div>
@@ -56,7 +56,7 @@ export default function Contact() {
               id="phone"
               name="phone"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-blue-100 dark:border-gray-600 dark:placeholder-blue-800 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="555-555-5555"
+              placeholder="281-330-8004"
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               required
             />
@@ -73,7 +73,7 @@ export default function Contact() {
               id="email"
               name="email"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-blue-100 dark:border-gray-600 dark:placeholder-blue-800 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="ken.adams@company.com"
+              placeholder="jon.snow@castleblack.com"
               required
             />
           </div>
