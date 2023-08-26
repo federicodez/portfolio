@@ -1,10 +1,14 @@
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import profilePic from "@/public/profilePic.jpg";
+import Contact from "./contact/page";
+import Resume from "./resume/page";
+const Project = dynamic(() => import("./projects/page"), { ssr: false });
 
 export default function Home() {
   return (
     <main className="wrapper">
-      <div className="home">
+      <div className="home" id="about">
         <div className="catch-phrase">
           <i className="fire">Firefighter</i>
           <b className="turned">=&gt;</b>
@@ -17,8 +21,8 @@ export default function Home() {
           priority={true}
         />
       </div>
-      <div className="about" id="contact">
-        <h1 className="about-header">About</h1>
+      <div className="about">
+        <h1 className="about-header font-bold text-2xl">ABOUT</h1>
         <p className="about-description">
           How you doin? I&apos;m a former firefighter from New Orleans. Now
           living in NY. Huge friends and Game of Thrones fan. Blood type is
@@ -29,6 +33,9 @@ export default function Home() {
           now I'm putting them out in my code.
         </p>
       </div>
+      <Resume />
+      <Project />
+      <Contact />
     </main>
   );
 }
