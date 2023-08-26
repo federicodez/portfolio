@@ -12,22 +12,25 @@ export default function Navbar() {
         <label htmlFor="check" className="checkbtn">
           <AiOutlineMenu />
         </label>
-        <Link href="#top">
-          <Image className="logo" id="logo" src={logo} alt="logo img" />
-        </Link>
+        <Image className="logo" id="logo" src={logo} alt="logo img" />
         <ul className="nav-list">
           <li className="nav-item">
-            <Link style={{ color: "white" }} href="#resume">
+            <Link className="link" style={{ color: "white" }} href="/">
+              About
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="link" style={{ color: "white" }} href="#resume">
               Resume
             </Link>
           </li>
           <li className="nav-item">
-            <Link style={{ color: "white" }} href="#project">
+            <Link className="link" style={{ color: "white" }} href="#project">
               Projects
             </Link>
           </li>
           <li className="nav-item">
-            <Link style={{ color: "white" }} href="#contact">
+            <Link className="link" style={{ color: "white" }} href="#contact">
               Contact Me
             </Link>
           </li>
