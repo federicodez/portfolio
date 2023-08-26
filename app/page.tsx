@@ -30,7 +30,7 @@ export default function Home() {
           way around the front and back end of applications, full-stack. I enjoy
           watching my code come to life on the web. I even get a kick from
           solving bugs and figuring things out. Used to put out fires in houses,
-          now I'm putting them out in my code.
+          now I&apos;m putting them out in my code.
         </p>
       </div>
       <Resume />
