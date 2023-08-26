@@ -29,7 +29,7 @@ export default function Contact() {
               <input
                 type="text"
                 id="lastName"
-                className="name"
+                name="lastName"
                 placeholder="Snow"
                 required
               />
@@ -50,6 +50,7 @@ export default function Contact() {
               <input
                 type="email"
                 id="email"
+                name="email"
                 placeholder="jon.snow@castleblack.com"
                 required
               />
@@ -59,6 +60,7 @@ export default function Contact() {
             <label htmlFor="message">Your message</label>
             <textarea
               id="message"
+              name="message"
               rows={4}
               placeholder="Write your thoughts here..."
             ></textarea>
