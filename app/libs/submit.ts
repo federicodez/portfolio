@@ -1,5 +1,6 @@
 "use server";
 import sendEmail from "./email";
+import { redirect } from "next/navigation";
 
 export default async function submitContact(data: FormData) {
   const firstName = data.get("firstName")?.valueOf();
@@ -26,7 +27,8 @@ export default async function submitContact(data: FormData) {
 
   await sendEmail({
     to: "jfedericodes@gmail.com",
-    subject: "Bowen Pain Center New Patient",
+    subject: "Portfolio",
     text: `Name: ${firstName} ${lastName} Phone: ${phone} Email: ${email} Message: ${message}`,
   });
+  redirect("#top");
 }
