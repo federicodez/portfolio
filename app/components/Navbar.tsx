@@ -14,9 +14,11 @@ export default function Navbar() {
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <div className="logo flex text-white md:text-4xl">
-                <BsChevronLeft className="logo-arrow" />
-                <BsFire className="logo-fire" />
-                <BsChevronRight className="logo-arrow" />
+                <Link href="/" className="flex">
+                  <BsChevronLeft className="logo-arrow" />
+                  <BsFire className="logo-fire" />
+                  <BsChevronRight className="logo-arrow" />
+                </Link>
               </div>
               <div className="md:hidden">
                 <button
