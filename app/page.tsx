@@ -3,16 +3,15 @@ import dynamic from "next/dynamic";
 import profilePic from "@/public/profilePic.jpg";
 import Contact from "./contact/page";
 import Resume from "./resume/page";
-const Project = dynamic(() => import("./projects/page"), { ssr: false });
+const Work = dynamic(() => import("./work-experience/page"), { ssr: false });
 
 export default function Home() {
   return (
     <main className="wrapper">
       <div className="home" id="about">
         <div className="catch-phrase">
-          <i className="fire">Firefighter</i>
-          <b className="turned">=&gt;</b>
-          <i className="dev">&#x7B;Software.Developer&#x7D;</i>
+          <span className="fire">fireFighter =&gt;</span>
+          <span className="dev">software.developer&#59;</span>
         </div>
         <Image
           className="profile-pic md:w-96"
@@ -34,7 +33,7 @@ export default function Home() {
         </p>
       </div>
       <Resume />
-      <Project />
+      <Work />
       <Contact />
     </main>
   );

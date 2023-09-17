@@ -50,8 +50,8 @@ export default function Navbar() {
                   </Link>
                 </li>
                 <li className="pb-6 text-xl text-white py-2 md:px-6 text-left">
-                  <Link href="#project" onClick={() => setActive(!active)}>
-                    Projects
+                  <Link href="#work" onClick={() => setActive(!active)}>
+                    Work Experience
                   </Link>
                 </li>
                 <li className="pb-6 text-xl text-white py-2 md:px-6 text-left">

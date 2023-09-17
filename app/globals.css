@@ -5,7 +5,6 @@
 :root {
   --bg-primary: #c5dff8;
   --nav-primary: #6a040f;
-  --nav-secondary: #c5dff8;
   --clr-red-900: hsla(360, 100%, 17%, 1);
   --clr-blue-500: hsla(227, 47%, 23%, 1);
   --clr-blue-900: hsla(227, 100%, 17%, 1);
@@ -87,29 +86,30 @@ p {
     .fire {
       font-size: var(--fs-600);
       font-weight: var(--fw-bold);
-      @supports (backgound-clip: text) or (--webkit-background-clip: text) {
-        color: transparent;
-        background-clip: text;
-        --webkit-background-clip: text;
-        background-image: url("../public/fire.gif");
-        background-size: cover;
-        background-position: center;
-      }
-    }
-    .turned {
-      margin: auto 10px;
+      /* @supports (backgound-clip: text) or (--webkit-background-clip: text) { */
+      /*   color: transparent; */
+      /*   background-clip: text; */
+      /*   --webkit-background-clip: text; */
+      /*   background-image: url("../public/fire.gif"); */
+      /*   background-size: cover; */
+      /*   background-position: center; */
+      /* } */
     }
     .dev {
       font-size: var(--fs-600);
       font-weight: var(--fw-bold);
-      @supports (backgound-clip: text) or (--webkit-background-clip: text) {
-        color: transparent;
-        background-clip: text;
-        --webkit-background-clip: text;
-        background-image: url("../public/matrix.gif");
-        background-size: cover;
-        background-position: center;
-      }
+      /* @supports (backgound-clip: text) or (--webkit-background-clip: text) { */
+      /*   color: transparent; */
+      /*   background-clip: text; */
+      /*   --webkit-background-clip: text; */
+      /*   background-image: url("../public/matrix.gif"); */
+      /*   background-size: cover; */
+      /*   background-position: center; */
+      /* } */
+    }
+    .semi-colon {
+      font-size: var(--fs-600);
+      font-weight: var(--fw-bold);
     }
   }
 }
@@ -213,32 +213,25 @@ p {
 }
 
 /********Project Card*******/
-.project {
+.work {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
   margin: 4rem auto;
+  padding: 3px;
+  box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
-.project-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+
+.description {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
-.project-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  object-fit: contain;
-  width: 100%;
-  padding: 1rem;
-  margin: 1rem;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-}
-.project-btn {
+
+.work-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -247,6 +240,12 @@ p {
   padding: 1px 4px;
   margin: 5px;
   width: fit;
+}
+
+.bpc {
+  width: 100%;
+  height: 400px;
+  overflow: auto;
 }
 
 /*****Contact*****/
@@ -392,7 +391,7 @@ form textarea {
       }
     }
   }
-  .project {
+  .work {
     width: 100%;
   }
   .contact {
