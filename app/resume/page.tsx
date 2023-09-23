@@ -27,7 +27,7 @@ export default function Resume() {
             <h1 className="font-bold text-lg">Bowen Pain Center</h1>
             <h2 className="underline underline-1">Software Developer</h2>
             <div className="flex justify-between">
-              <p>2020 - Present</p>
+              <p>2023 - Present</p>
               <p>New York, NY</p>
             </div>
             <ul>

@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <header>
-      <nav className="w-full fixed z-10 bg-red-950 top-0 left-0 right-0">
+      <nav className="fixed z-10 bg-[#495057] top-0 right-0 left-0 md:inset-x-52 md:rounded-xl shadow-[inset_0_-3em_3em_rgba(0,0,0,0.1),0_0_0_2px_rgb(255,255,255),0.3em_0.3em_1em_rgba(0,0,0,0.3)]">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -40,22 +40,47 @@ export default function Navbar() {
             >
               <ul className="h-screen md:h-auto justify-center md:flex">
                 <li className="pb-6 text-xl text-white py-2 md:px-6 text-left">
-                  <Link href="/" onClick={() => setActive(!active)}>
-                    Home
+                  <Link
+                    className="md:hover:text-[#495057] md:hover:bg-[#fff] md:rounded-lg md:px-2 md:py-1"
+                    href="/"
+                    onClick={() => setActive(!active)}
+                  >
+                    About
                   </Link>
                 </li>
                 <li className="pb-6 text-xl text-white py-2 md:px-6 text-left">
-                  <Link href="#resume" onClick={() => setActive(!active)}>
+                  <Link
+                    className="md:hover:text-[#495057] md:hover:bg-[#fff] md:rounded-lg md:px-2 md:py-1"
+                    href="#resume"
+                    onClick={() => setActive(!active)}
+                  >
                     Resume
                   </Link>
                 </li>
                 <li className="pb-6 text-xl text-white py-2 md:px-6 text-left">
-                  <Link href="#work" onClick={() => setActive(!active)}>
-                    Work Experience
+                  <Link
+                    className="md:hover:text-[#495057] md:hover:bg-[#fff] md:rounded-lg md:px-2 md:py-1"
+                    href="#work"
+                    onClick={() => setActive(!active)}
+                  >
+                    Experience
                   </Link>
                 </li>
                 <li className="pb-6 text-xl text-white py-2 md:px-6 text-left">
-                  <Link href="#contact" onClick={() => setActive(!active)}>
+                  <Link
+                    className="md:hover:text-[#495057] md:hover:bg-[#fff] md:rounded-lg md:px-2 md:py-1"
+                    href="#projects"
+                    onClick={() => setActive(!active)}
+                  >
+                    Projects
+                  </Link>
+                </li>
+                <li className="pb-6 text-xl text-white py-2 md:px-6 text-left">
+                  <Link
+                    className="md:hover:text-[#495057] md:hover:bg-[#fff] md:rounded-lg md:px-2 md:py-1"
+                    href="#contact"
+                    onClick={() => setActive(!active)}
+                  >
                     Contact Me
                   </Link>
                 </li>

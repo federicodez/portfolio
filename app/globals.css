@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --bg-primary: #c5dff8;
-  --nav-primary: #6a040f;
+  --bg-primary: linear-gradient(45deg, #778da9, #fff);
+  --nav-primary: #495057;
   --clr-red-900: hsla(360, 100%, 17%, 1);
   --clr-blue-500: hsla(227, 47%, 23%, 1);
   --clr-blue-900: hsla(227, 100%, 17%, 1);
@@ -66,7 +66,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 14rem auto 7rem;
+  margin: 10rem auto 5rem;
   .profile-pic {
     width: 400px;
     height: 400px;
@@ -82,6 +82,7 @@ p {
     align-items: center;
     flex-wrap: wrap;
     margin: 10px;
+    color: #343a40;
 
     .fire {
       font-size: var(--fs-600);
@@ -212,7 +213,7 @@ p {
   margin-left: 10px;
 }
 
-/********Project Card*******/
+/********Work Card*******/
 .work {
   display: flex;
   justify-content: center;
@@ -221,6 +222,7 @@ p {
   width: 100%;
   margin: 4rem auto;
   padding: 3px;
+  background: #dee2e6;
   box-shadow:
     inset 0 -3em 3em rgba(0, 0, 0, 0.1),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
@@ -238,7 +240,7 @@ p {
   border: 2px solid black;
   border-radius: 5px;
   padding: 1px 4px;
-  margin: 5px;
+  margin: 10px;
   width: fit;
 }
 
@@ -246,6 +248,49 @@ p {
   width: 100%;
   height: 400px;
   overflow: auto;
+}
+
+/*****Project Card*****/
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 4rem auto;
+  padding: 3px;
+  background: #dee2e6;
+  box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.description {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.project-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 1px 4px;
+  margin: 10px;
+  width: fit;
+}
+
+.fitbyfede {
+  width: 100%;
+  height: 400px;
+  overflow: auto;
+}
+
+.demo {
+  display: flex;
+  flex-direction: column;
 }
 
 /*****Contact*****/
@@ -294,14 +339,15 @@ form textarea {
   border: 1px solid var(--clr-red-900);
 }
 .form-btn {
-  background-color: var(--clr-red-900);
+  background: #343a40;
   border-radius: 1rem;
   color: #fff;
   padding: 1rem;
   margin: 1rem;
 }
 .form-btn:hover {
-  background-color: #d00000;
+  background: #fff;
+  color: #343a40;
   transform: scale(1.1) perspective(1px);
   transition: ease all 0.3s;
 }
@@ -315,6 +361,7 @@ form textarea {
   display: flex;
   font-size: 30px;
   margin: 20px;
+  color: #fff;
 }
 
 /*****************Laptop******************/
