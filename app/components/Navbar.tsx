@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <header>
-      <nav className="fixed z-10 bg-[#495057] top-0 right-0 left-0 md:inset-x-52 md:rounded-xl shadow-[inset_0_-3em_3em_rgba(0,0,0,0.1),0_0_0_2px_rgb(255,255,255),0.3em_0.3em_1em_rgba(0,0,0,0.3)]">
+      <nav className="fixed z-10 bg-[#495057] top-0 left-0 right-0 md:inset-x-4 lg:inset-x-48 sm:rounded-xl shadow-[inset_0_-3em_3em_rgba(0,0,0,0.1),0_0_0_2px_rgb(255,255,255),0.3em_0.3em_1em_rgba(0,0,0,0.3)]">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
