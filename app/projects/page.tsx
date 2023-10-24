@@ -16,22 +16,6 @@ const Projects = () => {
           repetitions for each set. And discover which workouts you do the most
           or least.
         </p>
-        <div className="demo">
-          <span className="underline text-center">Demo Account</span>
-          <div>
-            Email:{" "}
-            <span className="select-all bg-white px-1">chandler@bing.com</span>
-          </div>
-          <div>
-            Password: <span className="select-all bg-white px-1">friends</span>
-          </div>
-        </div>
-        <button className="project-btn">
-          <a href="https://fitbyfede.com" target="_blank" rel="noopener">
-            See Live
-          </a>
-          <CiShare1 />
-        </button>
       </div>
     </>
   );
