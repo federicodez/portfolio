@@ -27,14 +27,18 @@ export default function Resume() {
             <h1 className="font-bold text-lg">Bowen Pain Center</h1>
             <h2 className="underline underline-1">Software Developer</h2>
             <div className="flex justify-between">
-              <p>2023 - Present</p>
+              <p>2020 - Present</p>
               <p>New York, NY</p>
             </div>
             <ul>
               <li className="list-disc list-inside">
-                Built website for the company to be able to get in contact with
-                patients and teach the public about the procedures offered by
-                the doctor
+                Working on software for staff to manage patients, set up
+                appointments, and handle billing
+              </li>
+              <li className="list-disc list-inside">
+                Built website for the company to be able to contact patients and
+                teach the public in both, Spanish and English, about the
+                procedures offered by the doctor
               </li>
               <li className="list-disc list-inside">
                 Designed the site to be responsive to desktop, laptop, tablet
