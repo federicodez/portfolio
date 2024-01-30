@@ -15,15 +15,29 @@ const Projects = () => {
           repetitions for each set. And discover which workouts you do the most
           or least.
         </p>
-        <Link
-          href="https://fitbyfede.com"
-          rel="noopener"
-          target="_blank"
-          className="flex flex-row items-center gap-2"
-        >
-          <CiShare1 />
-          <p>Visit Live</p>
-        </Link>
+        <div className="flex flex-col justify-center items-center">
+          <div className="">
+            <Link
+              href="https://fitbyfede.com"
+              rel="noopener"
+              target="_blank"
+              className="flex flex-row items-center gap-2"
+            >
+              <CiShare1 />
+              <p>Visit Live</p>
+            </Link>
+          </div>
+          <div className="flex flex-col gap-1">
+            <div className="flex flex-row">
+              <p className="pr-2">Username:</p>
+              <p className="bg-white rounded-md px-1">chandler@bing.com</p>
+            </div>
+            <div className="flex flex-row">
+              <p className="pr-2">Password:</p>
+              <p className="bg-white rounded-md px-1">friends</p>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
