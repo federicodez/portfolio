@@ -22,38 +22,19 @@ export default function Resume() {
           <AiOutlineDownload />
         </button>
         <div className="container resume">
-          <h1 className="linethrough font-bold text-2xl">EMPLOYMENT</h1>
-          <div className="p-5">
-            <h1 className="font-bold text-lg">Bowen Pain Center</h1>
-            <h2 className="underline underline-1">Software Developer</h2>
-            <div className="flex justify-between">
-              <p>2020 - Present</p>
-              <p>New York, NY</p>
-            </div>
-            <ul>
-              <li className="list-disc list-inside">
-                Working on software for staff to manage patients, set up
-                appointments, and handle billing
-              </li>
-              <li className="list-disc list-inside">
-                Built website for the company to be able to contact patients and
-                teach the public in both, Spanish and English, about the
-                procedures offered by the doctor
-              </li>
-              <li className="list-disc list-inside">
-                Designed the site to be responsive to desktop, laptop, tablet
-                and cellphone devices
-              </li>
-              <li className="list-disc list-inside">
-                Architected site to be highly available and reliable with AWS
-                load balancers to distribute at the application layer
-              </li>
-              <li className="list-disc list-inside">
-                Utilized Route53 to register a custom domain for the site and
-                direct all traffic through a secure protocol
-              </li>
-            </ul>
+          <div className="m-5 pt-3">
+            <p>
+              Firefighter turned Software Engineer with a proven track record of
+              writing clean and efficient code to tackle complex challenges with
+              optimal runtime efficiency. Skilled in front-end development with
+              a continuous focus on expanding knowledge in back-end
+              technologies, specifically in AI and ML. Leveraging experience
+              from the Fire Department, I have demonstrated a disciplined
+              approach and a commitment to self-learning essential for driving
+              successful project outcomes in dynamic environments.
+            </p>
           </div>
+          <h1 className="linethrough font-bold text-2xl">EMPLOYMENT</h1>
           <div className="p-5">
             <h1 className="font-bold text-lg">Terrytown Fire Department</h1>
             <h2 className="underline underline-1">Operator / FireFighter</h2>
@@ -63,28 +44,59 @@ export default function Resume() {
             </div>
             <ul>
               <li className="list-disc list-inside">
-                Performed general maintenance on the fire trucks
+                Spearheaded maintenance efforts for fire trucks, ensuring
+                optimum functionality during emergency response situations,
+                resulting in a 100% operational readiness rate
               </li>
               <li className="list-disc list-inside">
-                Responded to structure fires by setting up the fire truck to
-                pump water, then packed out in full gear to fight the fire and
-                protect lives, the environment, and property
+                Led firefighting operations at structure fires, demonstrating
+                quick decision-making and coordination skills under
+                high-pressure environments, successfully containing and
+                minimizing property damage
               </li>
               <li className="list-disc list-inside">
-                Responded to medical calls, analyzed hazardous situations, and
-                reacted with quick solutions
+                Implemented efficient medical care procedures for civilians
+                impacted by fires, showcasing strong analytical skills and
+                empathy, resulting in immediate life-saving interventions and
+                positive outcomes
               </li>
               <li className="list-disc list-inside">
-                Provided medical care to civilians impacted by fire by taking
-                pulses, offering CPR, and treating any other life-threatening
-                injuries
+                Led training classes and drills, imparting essential
+                firefighting knowledge and hands-on skills to team members,
+                fostering continuous learning and operational readiness for
+                emergency response scenerios
+              </li>
+            </ul>
+          </div>
+          <h1 className="linethrough font-bold text-2xl">PROJECTS</h1>
+          <div className="p-5">
+            <h1 className="font-bold text-lg">Bowen Pain Center</h1>
+            <h2 className="underline underline-1">Software Developer</h2>
+            <ul>
+              <li className="list-disc list-inside">
+                Engineered a responsive and user-friendly website that educates
+                patients about available procedures and connects them with the
+                center, enhancing the center&apos;s online presence and
+                accessibility to potential patients
               </li>
               <li className="list-disc list-inside">
-                Supported EMS with procedures, such as administering oxygen,
-                loading patient into ambulance and transporting
+                Designed application as a progressive web app for cross-platform
+                usability, providing users with a consistent and engaging
+                experience on various devices
               </li>
               <li className="list-disc list-inside">
-                Taught and participated in training classes and drills
+                Designed the site to be responsive to desktop, laptop, tablet
+                and cellphone devices
+              </li>
+              <li className="list-disc list-inside">
+                Architected the website for high availability and reliability
+                using AWS load balancers, ensuring seamless user experience and
+                minimal downtime for visitors to the site
+              </li>
+              <li className="list-disc list-inside">
+                Utilized Route53 to register a custom domain for the website,
+                enhancing the center&apos;s branding and establishing a
+                professional online identity for the organization
               </li>
             </ul>
           </div>
