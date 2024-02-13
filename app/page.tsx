@@ -24,13 +24,14 @@ export default function Home() {
       <div className="about">
         <h1 className="about-header font-bold text-2xl">ABOUT</h1>
         <p className="about-description">
-          How you doin? I&apos;m a former firefighter from ⚜️ New Orleans⚜️ .
-          Now living in NYC. Huge F⦁R⦁I⦁E⦁N⦁D⦁S and Game of Thrones fan. Blood
-          type is coffee. Fitness junkie. Amateur chess player. Now I code. I
-          know my way around the front and back end of applications, full-stack.
-          I enjoy watching my code come to life on the web. I even get a kick
-          from solving bugs and figuring things out. Used to put out fires in
-          houses, now I&apos;m putting them out in my code.
+          Firefighter turned Software Engineer with a proven track record of
+          writing clean and efficient code to tackle complex challenges with
+          optimal runtime efficiency. Skilled in front-end development with a
+          continuous focus on expanding knowledge in back-end technologies,
+          specifically in AI and ML. Leveraging experience from the Fire
+          Department, I have demonstrated a disciplined approach and a
+          commitment to self-learning essential for driving successful project
+          outcomes in dynamic environments.
         </p>
       </div>
       <Resume />

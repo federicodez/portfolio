@@ -22,25 +22,19 @@ export default function Resume() {
           <AiOutlineDownload />
         </button>
         <div className="container resume">
-          <div className="m-5 pt-3">
-            <p>
-              Firefighter turned Software Engineer with a proven track record of
-              writing clean and efficient code to tackle complex challenges with
-              optimal runtime efficiency. Skilled in front-end development with
-              a continuous focus on expanding knowledge in back-end
-              technologies, specifically in AI and ML. Leveraging experience
-              from the Fire Department, I have demonstrated a disciplined
-              approach and a commitment to self-learning essential for driving
-              successful project outcomes in dynamic environments.
-            </p>
-          </div>
           <h1 className="linethrough font-bold text-2xl">EMPLOYMENT</h1>
           <div className="p-5">
-            <h1 className="font-bold text-lg">Terrytown Fire Department</h1>
-            <h2 className="underline underline-1">Operator / FireFighter</h2>
-            <div className="flex justify-between">
-              <p>2016 - 2021</p>
-              <p>Terrytown, LA</p>
+            <div className="flex flex-row justify-between">
+              <div className="flex flex-col">
+                <h1 className="font-bold text-lg">Terrytown Fire Department</h1>
+                <h2 className="underline underline-1">
+                  Operator / FireFighter
+                </h2>
+              </div>
+              <div className="flex flex-col">
+                <p>Terrytown, LA</p>
+                <p>2016 - 2021</p>
+              </div>
             </div>
             <ul>
               <li className="list-disc list-inside">
@@ -70,8 +64,38 @@ export default function Resume() {
           </div>
           <h1 className="linethrough font-bold text-2xl">PROJECTS</h1>
           <div className="p-5">
-            <h1 className="font-bold text-lg">Bowen Pain Center</h1>
-            <h2 className="underline underline-1">Software Developer</h2>
+            <div className="flex flex-row">
+              <h1 className="font-bold text-lg underline">fitbyfede</h1>
+              <p className="mx-1">/ Fitness application</p>
+            </div>
+            <ul>
+              <li className="list-disc list-inside">
+                Leveraged AWS services such as EC2 and Route53 for reliable and
+                scalable application deployment, ensuring high performance and
+                responseiveness for users accessing the application
+              </li>
+              <li className="list-disc list-inside">
+                Designed application as a progressive web app for cross-platform
+                usability, providing users with a consistent and engaging
+                experience on various devices
+              </li>
+              <li className="list-disc list-inside">
+                Implemented user subscription handling with Stripe JS, enabling
+                hassle-free subscription management and revenue generation
+                capabilities
+              </li>
+              <li className="list-disc list-inside">
+                Integrating advanced security features like NextAuth and MongoDB
+                for data protection, ensuring user privacy and trust, leading to
+                an increase in user retention rate
+              </li>
+            </ul>
+          </div>
+          <div className="p-5">
+            <div className="flex flex-row">
+              <h1 className="font-bold text-lg underline">Bowen Pain Center</h1>
+              <p className="mx-1">/ Medical Management App and Website</p>
+            </div>
             <ul>
               <li className="list-disc list-inside">
                 Engineered a responsive and user-friendly website that educates
@@ -102,9 +126,12 @@ export default function Resume() {
           </div>
           <h1 className="linethrough font-bold text-2xl">EDUCATION</h1>
           <div className="p-5">
-            <h1 className="font-bold text-lg">
-              Hack Reactor - Operation Spark
-            </h1>
+            <div className="flex justify-between">
+              <h1 className="font-bold text-lg">
+                Hack Reactor - Operation Spark
+              </h1>
+              <div className="mr-4">February 2022 - November 2022</div>
+            </div>
             <p>Advanced Software Engineering Immersive Program</p>
             <p>
               IBC Fundamentals of JavaScript, Functional Programming, and Web
@@ -124,38 +151,56 @@ export default function Resume() {
               </li>
             </ul>
           </div>
-          <h1 className="linethrough font-bold text-2xl">TECHNICAL SKILLS</h1>
+          <h1 className="linethrough font-bold text-2xl">SKILLS</h1>
           <div className="skills">
             <ul className="skill-list">
-              <h1 className="font-bold text-lg">Front End</h1>
-              <li className="skill-item">HTML5</li>
-              <li className="skill-item">JavaScript</li>
-              <li className="skill-item">TypeScript</li>
-              <li className="skill-item">NextJS</li>
-              <li className="skill-item">React</li>
-              <li className="skill-item">CSS</li>
-              <li className="skill-item">TailwindCSS</li>
-              <li className="skill-item">Bootstrap</li>
+              <h1 className="font-bold text-lg">Languages:</h1>
+              <li className="skill-item">Spanish,</li>
+              <li className="skill-item">English</li>
             </ul>
             <ul className="skill-list">
-              <h1 className="font-bold text-lg">Back End</h1>
-              <li className="skill-item">Python</li>
-              <li className="skill-item">NodeJS</li>
-              <li className="skill-item">ExpressJS</li>
-              <li className="skill-item">MySQL</li>
-              <li className="skill-item">Sequelize</li>
-              <li className="skill-item">MongoDB</li>
-              <li className="skill-item">Mongoose</li>
-              <li className="skill-item">Prisma</li>
-              <li className="skill-item">Restful APIs</li>
+              <h1 className="font-bold text-lg">Soft:</h1>
+              <li className="skill-item">Communication,</li>
+              <li className="skill-item">Leadership,</li>
+              <li className="skill-item">Teamwork,</li>
+              <li className="skill-item">Problem Solving,</li>
             </ul>
             <ul className="skill-list">
-              <h1 className="font-bold text-lg">Others End</h1>
-              <li className="skill-item">Git</li>
-              <li className="skill-item">GitHub</li>
-              <li className="skill-item">Webpack</li>
-              <li className="skill-item">Vim</li>
-              <li className="skill-item">Tmux</li>
+              <h1 className="font-bold text-lg">
+                Frameworks and Technologies:
+              </h1>
+              <li className="skill-item">NodeJS,</li>
+              <li className="skill-item">React,</li>
+              <li className="skill-item">Next,</li>
+              <li className="skill-item">TypeScript,</li>
+              <li className="skill-item">CSS,</li>
+              <li className="skill-item">Bootstrap,</li>
+              <li className="skill-item">TailwindCSS,</li>
+              <li className="skill-item">Flask,</li>
+              <li className="skill-item">Pandas,</li>
+              <li className="skill-item">SKLearn,</li>
+              <li className="skill-item">Matplotlib,</li>
+              <li className="skill-item">AWS,</li>
+              <li className="skill-item">MySQL,</li>
+              <li className="skill-item">MongoDB,</li>
+              <li className="skill-item">Prisma,</li>
+              <li className="skill-item">Github</li>
+            </ul>
+            <ul className="skill-list">
+              <h1 className="font-bold text-lg">Programming Languages:</h1>
+              <li className="skill-item">HTML,</li>
+              <li className="skill-item">JavaScript,</li>
+              <li className="skill-item">Python,</li>
+              <li className="skill-item">SQL</li>
+            </ul>
+            <ul className="skill-list">
+              <h1 className="font-bold text-lg">Interests:</h1>
+              <li className="skill-item">Learning new technologies,</li>
+              <li className="skill-item">creating apps,</li>
+              <li className="skill-item">movies,</li>
+              <li className="skill-item">snowboarding,</li>
+              <li className="skill-item">chess,</li>
+              <li className="skill-item">and traveling</li>
             </ul>
           </div>
         </div>
